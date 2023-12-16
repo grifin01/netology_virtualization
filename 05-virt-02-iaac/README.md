@@ -42,6 +42,42 @@
 
 *Приложите вывод команд установленных версий каждой из программ, оформленный в Markdown.*
 
+## Ответ
+
+* VirtualBox:
+```
+vish@DevOps:~$ VBoxManage --version
+7.0.12r159484
+```
+
+* Vagrant:
+```
+vish@DevOps:~$ vagrant -v
+Vagrant 2.3.4
+```
+
+* Terraform:
+```
+vish@DevOps:~$ terraform -v
+Terraform v1.6.6
+on linux_amd64
+```
+
+* Ansible:
+```
+vish@DevOps:~$ ansible --version
+
+ansible [core 2.15.8]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/vish/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/vish/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0] (/usr/bin/python3)
+  jinja version = 3.0.3
+  libyaml = True
+```
+
 ## Задача 4 
 
 Воспроизведите практическую часть лекции самостоятельно.
