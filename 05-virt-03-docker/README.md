@@ -25,7 +25,7 @@ Hey, Netology
 
 ## Ответ
 
-https://hub.docker.com/repository/docker/denvish98/virt-03-docker/general
+https://hub.docker.com/r/denvish98/virt-03-docker
 
 ## Задача 2
 
