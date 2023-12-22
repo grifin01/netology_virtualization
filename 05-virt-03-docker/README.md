@@ -66,6 +66,52 @@ https://hub.docker.com/r/denvish98/virt-03-docker
 - Добавьте ещё один файл в папку ```/data``` на хостовой машине.
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.
 
+## Ответ
+- Запустите первый контейнер из образа ***centos*** c любым тегом в фоновом режиме, подключив папку ```/data``` из текущей рабочей директории на хостовой машине в ```/data``` контейнера:
+```
+vish@DevOps:~/Netology/devops-netology/docker_tasks/05-virt-03-docker$ docker run -it -d --name centos -v $(pwd)/data:/data centos:latest
+Unable to find image 'centos:latest' locally
+latest: Pulling from library/centos
+a1d0c7532777: Pull complete 
+Digest: sha256:a27fd8080b517143cbbbab9dfb7c8571c40d67d534bbdee55bd6c473f432b177
+Status: Downloaded newer image for centos:latest
+5af1a070d07f8fc8e2c37e444ba9d2cc00164bfccd7a32c987efe31475de15a6
+```
+- Запустите второй контейнер из образа ***debian*** в фоновом режиме, подключив папку ```/data``` из текущей рабочей директории на хостовой машине в ```/data``` контейнера:
+```
+vish@DevOps:~/Netology/devops-netology/docker_tasks/05-virt-03-docker$ docker run -it -d --name debian -v $(pwd)/data:/data debian:latest
+Unable to find image 'debian:latest' locally
+latest: Pulling from library/debian
+bc0734b949dc: Pull complete 
+Digest: sha256:bac353db4cc04bc672b14029964e686cd7bad56fe34b51f432c1a1304b9928da
+Status: Downloaded newer image for debian:latest
+61b4c4eb054dd1fb942951f47d1bdfd3d96f7cd1de6a1b0aa7323a06cb511c9e
+```
+
+- Подключитесь к первому контейнеру с помощью ```docker exec``` и создайте текстовый файл любого содержания в ```/data```:
+```
+vish@DevOps:~/Netology/devops-netology/docker_tasks/05-virt-03-docker$ docker exec -it centos bash
+[root@5af1a070d07f /]# echo "Hi, it's Netology task" >> /data/welcome.txt
+[root@5af1a070d07f /]# exit
+```
+
+- Добавьте ещё один файл в папку ```/data``` на хостовой машине:
+```
+vish@DevOps:~/Netology/devops-netology/docker_tasks/05-virt-03-docker$ echo "And this is the host" >> ./data/host.txt
+```
+
+- Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера:
+```
+vish@DevOps:~/Netology/devops-netology/docker_tasks/05-virt-03-docker$ docker exec -it debian bash
+root@61b4c4eb054d:/# ls /data/
+host.txt  welcome.txt
+```
+
+
+
+
+
+
 ## Задача 4 (*)
 
 Воспроизведите практическую часть лекции самостоятельно.
