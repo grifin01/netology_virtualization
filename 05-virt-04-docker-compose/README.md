@@ -12,6 +12,9 @@
 
 ![image](https://github.com/grifin01/netology_virtualization/assets/111656372/3a9f1d77-e85a-4c3f-9faa-1bdafe71879f)
 
+![image](https://github.com/grifin01/netology_virtualization/assets/111656372/bcc2a067-e17e-495b-9ee5-bcb0b67eff56)
+
+
 ## Задача 2
 
 **2.1.** Создайте вашу первую виртуальную машину в YandexCloud с помощью web-интерфейса YandexCloud.        
