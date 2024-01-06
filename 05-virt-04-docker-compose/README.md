@@ -27,7 +27,8 @@
 
 ## Ответ
 
-![image](https://github.com/grifin01/netology_virtualization/assets/111656372/02f5ac30-50d7-41e1-abd7-dcc415cc4884)
+![image](https://github.com/grifin01/netology_virtualization/assets/111656372/13c80f8f-e3aa-4371-a0b3-42ff58001786)
+
 
 
 ## Задача 3
@@ -36,6 +37,11 @@
 Используйте Ansible-код в директории ([src/ansible](https://github.com/netology-group/virt-homeworks/tree/virt-11/05-virt-04-docker-compose/src/ansible)).
 
 Чтобы получить зачёт, вам нужно предоставить вывод команды "docker ps" , все контейнеры, описанные в [docker-compose](https://github.com/netology-group/virt-homeworks/blob/virt-11/05-virt-04-docker-compose/src/ansible/stack/docker-compose.yaml),  должны быть в статусе "Up".
+
+## Ответ
+
+![image](https://github.com/grifin01/netology_virtualization/assets/111656372/155de21f-1576-4766-99d9-ac7d2b735be1)
+
 
 ## Задача 4
 
@@ -47,9 +53,13 @@
 Чтобы получить зачёт, предоставьте: 
 
 - скриншот работающего веб-интерфейса Grafana с текущими метриками, как на примере ниже.
-<p align="center">
-  <img width="1200" height="600" src="./assets/yc_02.png">
-</p>
+  
+![image](https://github.com/grifin01/netology_virtualization/assets/111656372/798f6ac0-1c1a-4cc0-a37b-0b1fce1e41c0)
+
+## Ответ
+
+![image](https://github.com/grifin01/netology_virtualization/assets/111656372/8ca7906c-ee92-4287-b7d4-6cebdd33ea37)
+
 
 ## Задача 5 (*)
 
